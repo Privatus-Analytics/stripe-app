@@ -1,0 +1,24 @@
+{
+  "name": "privatus-analytics-stripe-app",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "start": "npx @stripe/cli@1.53.0 apps start",
+    "upload": "npx @stripe/cli@1.53.0 apps upload"
+  },
+  "dependencies": {
+    "@stripe/ui-extension-sdk": "9.4.0",
+    "react": "18.3.1",
+    "stripe": "22.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "@types/react": "18.3.31",
+    "typescript": "5.9.3",
+    "vitest": "5.0.3",
+    "vite": "8.3.2"
+  }
+}

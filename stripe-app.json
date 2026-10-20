@@ -1,0 +1,34 @@
+{
+  "id": "com.privatusanalytics.analytics",
+  "version": "1.0.0",
+  "name": "Privatus Analytics",
+  "icon": "./icon.png",
+  "distribution_type": "public",
+  "sandbox_install_compatible": true,
+  "stripe_api_access_type": "restricted_api_key",
+  "permissions": [
+    {
+      "permission": "subscription_read",
+      "purpose": "Lets Privatus Analytics read your subscriptions (status, dates, amount and plan) to show MRR, churn, retention and cohorts next to your website traffic. It cannot create or change anything."
+    },
+    {
+      "permission": "product_read",
+      "purpose": "Lets Privatus Analytics read product names so each plan shows its real name in the MRR by plan table."
+    },
+    {
+      "permission": "coupon_read",
+      "purpose": "Lets Privatus Analytics read recurring discounts on subscriptions so MRR is counted after discounts."
+    }
+  ],
+  "ui_extension": {
+    "views": [
+      {
+        "viewport": "settings",
+        "component": "AppSettings"
+      }
+    ]
+  },
+  "post_install_action": {
+    "type": "settings"
+  }
+}
