@@ -1,5 +1,24 @@
 # Privatus Analytics for Stripe
 
+**See your subscription revenue next to your website traffic.**
+
+Your visitors are in one dashboard and your subscription money is in Stripe. So
+it is hard to see if more visitors really means more paying customers.
+
+This Stripe app makes a read-only key for Privatus Analytics in a few clicks.
+Paste it into your site's Subscriptions settings, and Privatus Analytics reads
+your subscriptions. The key can't change anything in your Stripe account.
+
+So you see your monthly recurring revenue (MRR) and churn (the share of
+customers who cancel) next to your traffic, and you can get an alert when MRR
+falls. The numbers are honest too. Privatus Analytics counts visits without
+cookies, so there is no cookie pop-up for your analytics, and it leaves bots
+out.
+
+**Free plan, no card:** 10,000 events a month (an event is a page view or an action you track) on up to 3 sites. [Start free at privatusanalytics.com](https://privatusanalytics.com).
+
+## About this repo
+
 A data-only Stripe App with restricted API key (RAK) authentication. When a customer
 installs it, Stripe makes a restricted key that has only the permissions below. The customer
 copies it from the app's settings page and pastes it into Privatus Analytics under
